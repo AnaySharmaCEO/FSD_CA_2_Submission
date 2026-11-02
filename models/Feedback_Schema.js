@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-// Each document in MongoDB represents one student's feedback.
 const feedbackDetails = new mongoose.Schema(
   {
     studentName: {

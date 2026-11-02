@@ -39,7 +39,6 @@ export async function getFeedback(req, res, next) {
       });
     }
 
-    // Skip records from earlier pages, then get this page's feedback.
     const firstRecordIndex = (pageNumber - 1) * recordsPerPage;
     const totalRecords = await Feedback.countDocuments();
     const feedbackRecords = await Feedback.find()
